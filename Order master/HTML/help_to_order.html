@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订餐</title>
+    <link rel="stylesheet"  type="text/css"  href="../CSS/help_to_order.css">
+    <script type="text/javascript" src="../jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../JavaScript/main.js"></script>
+    <script type="text/babel" src="../react.js"></script>
+    <script type="text/babel" src="../react-dom.js"></script>
+</head>
+<body>
+<div>
+    <div class="order"><button class = "back" onclick="window.location='main_page.html'">back</button>订餐</div>
+</div>
+<div>
+    <h4 class="person">人：</h4>
+    <input class="name" id="name_id" name="input_person" type="text" disabled>
+    <div class="choose_person"onclick="window.location='person_name.html'">选人</div>
+</div>
+<div>
+    <h4 class="restaurant">餐厅：</h4>
+    <input class="name" id="restaurant_id" name="input_restaurant" type="text" disabled>
+    <div class="choose_restaurant" onclick="get_clean()">选餐厅</div>
+</div>
+<div>
+    <h4 class="meal">套餐：</h4>
+    <input class="name" id="meal_id" name="input_meal" type="text" disabled>
+    <div class="choose_meal"onclick="show_disabled()" id="button" disabled >选套餐</div>
+</div>
+<div>
+    <div class="acknowledgement" type="button" id="acknowledgement_id" onclick="check_button_status()">确认</div>
+</div>
+
+</body>
+</html>
